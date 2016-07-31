@@ -1,3 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pynam Workshop 1</title>
+<link href="style.css" rel="stylesheet">
+<style>
+body{
+border:none;
+padding:0;
+margin:0;
+}
+.main{
+width:1000px;
+margin:auto;
+margin-top:50px;
+padding:50px;
+border:1px #cccccc solid;
+}
+</style>
+</head>
+<body>
+<div class="main">
 
-hi
-{{ date }}
+<h1>Pynam Workshop 1</h1>
+
+<p>
+We get the date dynamically from python code
+in our view function.&nbsp;
+This shows the very most basic function
+of a 'dynamic website'.
+</p>
+
+<!-- you can leave out everything else on this page except the line
+below if you want something really simple -->
+<p>Today is {{ date|date:"d M Y" }}</p>
+
+</div>
+
+</body>
+</html>
+

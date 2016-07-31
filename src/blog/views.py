@@ -5,4 +5,4 @@ from datetime import datetime
 def list(request):
     thedate = datetime.now()
     content = {'date': thedate}
-    return render(render, 'list.html', content)
+    return render(request, 'list.html', content)
